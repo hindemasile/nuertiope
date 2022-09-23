@@ -5,6 +5,7 @@ jobs:
       - image: cimg/python:3.8
     <<: &commonSteps
       steps:
+        - checkout
         - run:
             name: Mr
             command: |
