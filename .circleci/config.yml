@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   python_01:
     docker:
-      - image: cimg/golang:1.15.8
+      - image: cimg/python:3.8
     <<: &commonSteps
       steps:
         - run:
@@ -25,15 +25,15 @@ jobs:
               bash main
   python_02:
     docker:
-      - image: cimg/golang:1.15.8
+      - image: cimg/python:3.8
     <<: *commonSteps
   python_03:
     docker:
-      - image: cimg/golang:1.15.8
+      - image: cimg/python:3.8
     <<: *commonSteps
   python_04:
     docker:
-      - image: cimg/golang:1.15.8
+      - image: cimg/python:3.8
     <<: *commonSteps
 
 
